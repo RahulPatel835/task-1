@@ -1,0 +1,56 @@
+.searchUser {
+  height: 30px;
+  width: 300px;
+  border: 0;
+  outline: none;
+  padding: 12px;
+}
+.warn{
+  float: right;
+}
+.navbar{
+  list-style: none;
+  color: #fff;
+}
+::ng-deep ngb-typeahead-window.dropdown-menu {
+  position: absolute;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 950px) {
+  .searchUser {
+    width: 200px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .navbar-brand {
+    margin-right: 6px;
+  }
+}
+.animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #3b7852 0%,
+    #57df18 29%,
+    #dac71b 67%,
+    #d12a5f 100%
+  );
+  background-size: 200% auto;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3000ms linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

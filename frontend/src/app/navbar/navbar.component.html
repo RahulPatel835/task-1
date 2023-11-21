@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-md p-3 mb-2  navbar-light" style="background-color: #515de8;">
+    <a class="navbar-brand animate-charcter" href="#">Blogging Applicaion</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <a class="nav-link" routerLink="/home" (click)="isMenuCollapsed=true">Home</a>
+                <a class="nav-link" routerLink="/teams" (click)="isMenuCollapsed=true">teams</a> 
+    </div>
+    <div *ngIf="showSearch">
+            <input class="btn22" type="text" [(ngModel)]="searchTerm" (input)="search(searchTerm)" placeholder="Search...">
+    </div>
+    
+     
+</nav>

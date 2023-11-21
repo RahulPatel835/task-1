@@ -1,0 +1,67 @@
+/* Style for the team container */
+.team-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for the team name */
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  /* Style for the user details in the team */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the user image */
+  .user-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Responsive styles for user details */
+  h2, h3, h4 {
+    margin: 10px 0;
+  }
+  
+  /* Style for the create team button */
+  .create-team-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .team-container {
+      padding: 15px;
+    }
+  
+    h3 {
+      font-size: 1.2em;
+    }
+  
+    li {
+      padding: 15px;
+    }
+  
+    .create-team-button {
+      font-size: 0.9em;
+    }
+  }
+  

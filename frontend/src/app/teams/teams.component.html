@@ -1,0 +1,14 @@
+<div *ngFor="let team of teams">
+  <h3>{{ team.name }}</h3>
+  <ul>
+    <li *ngFor="let user of team.users">
+      <img [src]="user.avatar" alt="{{ user.first_name }}" class="user-image" >
+      <h2>UserName : <b>{{ user.first_name}} {{ user.last_name}}</b></h2>
+      <h3>Email :<b> {{ user.email }}</b></h3>
+      <h4>Gender :<b> {{ user.gender }}</b></h4>
+      <h4>Domain :<b> {{ user.domain }}</b></h4>
+      <h4>Available :<b> {{ user.available }}</b></h4>
+    </li>
+  </ul>
+</div>
+<button (click)="createTeam()">Create Team</button>

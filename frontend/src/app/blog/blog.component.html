@@ -1,0 +1,19 @@
+
+    <div *ngIf="!isLoading">
+    <h1 id="h1" class="animate-charcter">Users</h1>
+    <div *ngFor="let post of paginatedPosts" class="blog-post">
+      <img [src]="post.avatar" alt="{{ post.first_name }}" class="post-image" >
+      <h2>UserName : <b>{{ post.first_name}} {{ post.last_name}}</b></h2>
+      <h3>Email :<b> {{ post.email }}</b></h3>
+      <h4>Gender :<b> {{ post.gender }}</b></h4>
+      <h4>Domain :<b> {{ post.domain }}</b></h4>
+      <h4>Available :<b> {{ post.available }}</b></h4>
+    </div>
+  </div>  
+  <app-pagination
+  *ngIf="!isLoading && totalPages > 1"
+  [currentPage]="currentPage"
+  [totalPages]="totalPages"
+  [maxVisiblePages]="4" 
+  (pageChanged)="onPageChanged($event)"
+></app-pagination>
